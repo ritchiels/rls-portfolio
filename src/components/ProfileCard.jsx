@@ -21,7 +21,7 @@ export const ProfileCard = () => {
             style={{ 
                 backgroundColor: "#F1EDEE",
                 borderRadius: 20,
-                // border: "1px solid #7C7C7C", 
+                //consider moving all this styling to scss 
                 marginBottom: 50,
                 maxWidth: "50vh",
                 boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)"  
@@ -36,20 +36,23 @@ export const ProfileCard = () => {
             <CardBody>
                 <CardTitle><h2>Ritchie L. Simmons</h2></CardTitle>
                 <hr />
-                <CardText>Full-Stack web developer with a focus in React and Native, as well as back-end technologies Node.js, Express, and MongoDB.</CardText>
+                <CardText className="description">Full-Stack web developer with a focus in React and Native, as well as back-end technologies Node.js, Express, and MongoDB.</CardText>
             </CardBody>
             <CardFooter>
-                <a href="https://github.com/ritchiels" className="socials">
-                    <FontAwesomeIcon icon={faGithub} />
+                <a href="https://github.com/ritchiels" className="socials" >
+                    <FontAwesomeIcon icon={faGithub} size="xl" />
                 </a>
-                <a href="mailto:ritchie.simmons@gmail.com" className="socials">
-                    <FontAwesomeIcon icon={faEnvelope} />
+                <a href="mailto:ritchie.simmons@gmail.com" className="socials" >
+                    <FontAwesomeIcon icon={faEnvelope} size="xl" />
                 </a>
-                <a href="https://www.linkedin.com/in/ritchie-simmons-060443231/" className="socials">
-                    <FontAwesomeIcon icon={faLinkedin} />
+                <a href="https://www.linkedin.com/in/ritchie-simmons-060443231/" className="socials" >
+                    <FontAwesomeIcon icon={faLinkedin} size="xl" />
                 </a>
             </CardFooter>
         </Card>
     </div>
   )
 }
+
+//todo: add dark mode toggler, animate icon
+

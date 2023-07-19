@@ -1,6 +1,7 @@
 // $ash-gray: #9BC1BC;
 $light-mint: #D1FFD7;
 $cadet-blue: #93B7BE; //light-blue
+$lapiz-lazuli: #376996;
 $french-gray: #C5CBD3; //light-gray
 $papaya-whip: #FDF0D5; //cream
 $gray: #7C7C7C;
@@ -26,10 +27,26 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2 );
 }
 
-.socials {
-    color: inherit;
-    text-decoration: none;
+.card-footer {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 45%;
+    margin: auto;
 }
+
+.socials {
+    color: $lapiz-lazuli;
+    text-decoration: none;
+    margin: auto;
+    transition: color 0.2s ease;
+//transition & transition-delay with ease create a slight delay for transition
+    &:hover {
+        color: $cadet-blue;
+        transition-delay: 0.2s ease;
+    }
+}
+
 
 .font-comfortaa {
     font-family: "Comfortaa", cursive;
