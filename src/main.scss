@@ -1,22 +1,37 @@
 // $ash-gray: #9BC1BC;
 $light-mint: #D1FFD7;
-$cadet-blue: #93B7BE;
-$dark-gray: #595f5e;
+$cadet-blue: #93B7BE; //light-blue
+$french-gray: #C5CBD3; //light-gray
+$papaya-whip: #FDF0D5; //cream
+$gray: #7C7C7C;
 $white-smoke: #F1EDEE;
 
-body {
-    background-color: $white-smoke;
-}
 
-.profile-pic {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-top: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2 );
+body {
+    background-color: $french-gray;
 }
 
 h2 {
-    color: $white-smoke;
+    color: $gray;
+    margin-top: -1px;
+    margin-bottom: -2px;
+}
+
+.profile-pic {
+    width: 175px;
+    height: 175px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2 );
+}
+
+.socials {
+    color: inherit;
+    text-decoration: none;
+}
+
+.font-comfortaa {
+    font-family: "Comfortaa", cursive;
+    font-size: 14px;
 }
