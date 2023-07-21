@@ -24,8 +24,10 @@ export const ProfileCard = () => {
                 //consider moving all this styling to scss 
                 marginBottom: 50,
                 maxWidth: "50vh",
+                padding: '2em',
                 boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)"  
-                }}>
+                }}
+        >
             <CardImg
                 top
                 width="100%"
@@ -54,5 +56,4 @@ export const ProfileCard = () => {
   )
 }
 
-//todo: add dark mode toggler, animate icon
 
