@@ -39,16 +39,18 @@ h2 {
     color: $lapiz-lazuli;
     text-decoration: none;
     margin: auto;
-    transition: color 0.2s ease;
+    transition: color 0.1s ease;
 //transition & transition-delay with ease create a slight delay for transition
     &:hover {
         color: $cadet-blue;
-        transition-delay: 0.2s ease;
+        transition-delay: 0.1s ease;
     }
 }
 
-.project-cards {
-    background-color: white;
+.github-calendar {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
 }
 
 .font-comfortaa {

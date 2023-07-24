@@ -12,7 +12,7 @@ function App() {
     <>
         <Container>
             <ProfileCard />
-            <div style={{ maxWidth: '600px', overflowX: 'auto' }}>
+            <div className="github-calendar">
                 {/* <GitHubCalendar username="ritchiels" /> */}
             </div>
             <br />
@@ -24,6 +24,6 @@ function App() {
 
 export default App
 
-//todo: add project cards
+
 //todo: add loading spinner for github calendar component
 //todo: add dark mode toggler, animate icon
