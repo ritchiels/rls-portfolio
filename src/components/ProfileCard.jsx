@@ -16,6 +16,11 @@ import '../main.scss'
 import ProfilePic from '/src/assets/rich-prof.jpg'
 
 export const ProfileCard = () => {
+    const [showModal, setShowModal] = useState(false);
+
+    const toggleEmailModal = () => {
+        setShowModal(!showModal);
+    };
 
     return (
         <div style={{ display: "flex", justifyContent: "center" }} className="font-comfortaa">
@@ -46,7 +51,7 @@ export const ProfileCard = () => {
                     <a href="https://github.com/ritchiels" className="socials" >
                         <FontAwesomeIcon icon={faGithub} size="xl" />
                     </a>
-                    <a href="#" onClick={} className="socials" >
+                    <a href="#" onClick={toggleEmailModal} className="socials" >
                         <FontAwesomeIcon icon={faEnvelope} size="xl" />
                     </a>
                     <a href="https://www.linkedin.com/in/ritchie-simmons-060443231/" className="socials" >
@@ -55,7 +60,7 @@ export const ProfileCard = () => {
                 </CardFooter>
             </Card>
             {/* modal component */}
-            <EmailModal isOpen={} toggle={} />
+            <EmailModal isOpen={showModal} toggle={toggleEmailModal} />
         </div>
     )
 }
