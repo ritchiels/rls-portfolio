@@ -16,10 +16,10 @@ import '../main.scss'
 import ProfilePic from '/src/assets/rich-prof.jpg'
 
 export const ProfileCard = () => {
-    const [showModal, setShowModal] = useState(false);
+    // const [showModal, setShowModal] = useState(false);
 
-    const toggleEmailModal = () => {
-        setShowModal(!showModal);
+    const toggleEmailModal = (e) => {
+        e.preventDefault();
     };
 
     return (
@@ -60,7 +60,7 @@ export const ProfileCard = () => {
                 </CardFooter>
             </Card>
             {/* modal component */}
-            <EmailModal isOpen={showModal} toggle={toggleEmailModal} />
+            <EmailModal />
         </div>
     )
 }
